@@ -5,6 +5,7 @@ import {
   createUser,
   getUser,
   deleteUser,
+  editTodo,
 } from "../Controller/user.js";
 
 const router = express.Router();
@@ -20,5 +21,7 @@ router.get("/:id", getUser);
 
 //user delete the item
 router.delete("/:id", deleteUser);
+
+router.put("/:id", editTodo);
 
 export default router;
